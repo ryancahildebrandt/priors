@@ -56,7 +56,6 @@ def classifier_rf(n_estimators = 200):
 
     return(rf)
 
-
 class Classifier:
     def __init__(self, Dataset_object):
         self.dataset = Dataset_object
