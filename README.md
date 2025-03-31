@@ -3,7 +3,8 @@
 
 ---
 
-[*Open*](https://gitpod.io/#https://github.com/ryancahildebrandt/priors) *in gitpod*
+[![Open in gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ryancahildebrandt/priors)
+[![This project contains 0% LLM-generated content](https://brainmade.org/88x31-dark.png)](https://brainmade.org/)
 
 ## *Purpose*
 This project is an experiment on the potential usefulness of combining two commonly used sentence/document embedding approaches, bag of words models (tf-idf, hash, count) and pretrained sentence embedding models (RoBERTa, miCSE, sentence-t5). These embeddings are frequently used in text labeling or classification tasks, which depend on information contained in the embedding vectors. Different embedding approaches encode different sorts and amounts of information, and as a result embedding method can drastically change the outcome of a given task. Where neural network based sentence embeddings can more accurately encode the intent, context, and word similarity in an utterance, bag of words models encode specific words explicitly. Traditionally, these methods have not been combined to create a single embedding vector for a variety of reasons, not least of which is the assumption that neural network based embeddings encode all of the information of bag of words models *and then some*. While it's true that neural network embeddings are much more flexible in the types of information they encode and often outperform bag of words models on more complex tasks, that doesn't necessarily mean that bag of words models can't encode useful information for a specific task.
